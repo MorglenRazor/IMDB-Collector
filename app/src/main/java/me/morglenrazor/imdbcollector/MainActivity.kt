@@ -1,7 +1,10 @@
 package me.morglenrazor.imdbcollector
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+
+//TODO Remove that later
+//Morglen lalka
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
