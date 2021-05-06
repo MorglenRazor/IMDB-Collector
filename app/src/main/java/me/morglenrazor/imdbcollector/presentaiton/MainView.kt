@@ -1,4 +1,9 @@
 package me.morglenrazor.imdbcollector.presentaiton
 
-interface MainView {
+import moxy.MvpView
+import moxy.viewstate.strategy.alias.AddToEndSingle
+
+interface MainView : MvpView{
+    @AddToEndSingle
+    fun setText(text: String)
 }
