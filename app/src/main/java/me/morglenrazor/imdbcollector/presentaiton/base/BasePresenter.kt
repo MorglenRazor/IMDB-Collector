@@ -1,10 +1,8 @@
-package me.morglenrazor.imdbcollector.presentaiton
+package me.morglenrazor.imdbcollector.presentaiton.base
 
-import moxy.InjectViewState
 import moxy.MvpPresenter
 
-@InjectViewState
-class MainPresenter : MvpPresenter<MainView>() {
+class BasePresenter : MvpPresenter<BaseView>() {
 
     fun onButtonClicked(text: String){
         val newText = text + "World"

@@ -1,18 +1,17 @@
-package me.morglenrazor.imdbcollector.ui
+package me.morglenrazor.imdbcollector.ui.base
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
 import me.morglenrazor.imdbcollector.R
-import me.morglenrazor.imdbcollector.presentaiton.MainPresenter
-import me.morglenrazor.imdbcollector.presentaiton.MainView
+import me.morglenrazor.imdbcollector.presentaiton.base.BasePresenter
+import me.morglenrazor.imdbcollector.presentaiton.base.BaseView
 import moxy.MvpAppCompatActivity
 import moxy.presenter.InjectPresenter
 
-class MainActivity : MvpAppCompatActivity(), MainView {
+class BaseActivity : MvpAppCompatActivity(), BaseView {
 
     @InjectPresenter
-    lateinit var presenter: MainPresenter
+    lateinit var presenter: BasePresenter
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
