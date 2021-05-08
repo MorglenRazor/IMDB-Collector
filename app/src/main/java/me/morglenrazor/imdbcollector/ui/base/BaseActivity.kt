@@ -8,23 +8,12 @@ import me.morglenrazor.imdbcollector.presentaiton.base.BaseView
 import moxy.MvpAppCompatActivity
 import moxy.presenter.InjectPresenter
 
-class BaseActivity : MvpAppCompatActivity(), BaseView {
-
-    @InjectPresenter
-    lateinit var presenter: BasePresenter
-
+abstract class BaseActivity : MvpAppCompatActivity(), BaseView {
     override fun onCreate(savedInstanceState: Bundle?) {
-
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.activity_main)
-
-        mainButtonShowTxt.setOnClickListener {
-            presenter.onButtonClicked(mainEditText.text.toString())
-        }
-
     }
 
-    override fun setText(text: String){
-        mainTextView.text = text
-    }
+
 }
