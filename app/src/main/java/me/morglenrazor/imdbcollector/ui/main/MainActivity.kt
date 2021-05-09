@@ -1,16 +1,12 @@
 package me.morglenrazor.imdbcollector.ui.main
 
 import android.os.Bundle
-import android.widget.Button
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 import me.morglenrazor.imdbcollector.R
-import me.morglenrazor.imdbcollector.presentaiton.base.BasePresenter
-import me.morglenrazor.imdbcollector.presentaiton.base.BaseView
 import me.morglenrazor.imdbcollector.presentaiton.main.MainPresenter
 import me.morglenrazor.imdbcollector.presentaiton.main.MainView
 import me.morglenrazor.imdbcollector.ui.base.BaseActivity
-import me.morglenrazor.imdbcollector.ui.base.BaseFragment
 import moxy.presenter.InjectPresenter
 
 class MainActivity : BaseActivity(), MainView {
@@ -25,8 +21,6 @@ class MainActivity : BaseActivity(), MainView {
         mainButtonShowTxt.setOnClickListener {
             val txt = mainEditText.text.toString()
             presenter.onButtonClicked(txt)
-//            val toast = Toast.makeText(applicationContext, "Ghbdtn", Toast.LENGTH_LONG)
-//            toast.show()
         }
 
     }
@@ -37,8 +31,7 @@ class MainActivity : BaseActivity(), MainView {
     }
 
     override fun showMessage(msg: String) {
-        val toast = Toast.makeText(this, msg, Toast.LENGTH_LONG)
-        toast.show()
+        Toast.makeText(this, msg, Toast.LENGTH_LONG).show()
     }
 
 }
