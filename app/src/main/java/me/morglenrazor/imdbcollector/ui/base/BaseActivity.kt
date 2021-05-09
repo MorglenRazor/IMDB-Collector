@@ -1,6 +1,8 @@
 package me.morglenrazor.imdbcollector.ui.base
 
 import android.os.Bundle
+import android.view.View
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 import me.morglenrazor.imdbcollector.R
 import me.morglenrazor.imdbcollector.presentaiton.base.BasePresenter
@@ -12,8 +14,10 @@ abstract class BaseActivity : MvpAppCompatActivity(), BaseView {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setContentView(R.layout.activity_main)
     }
 
-
+    override fun showMessage(msg: String) {
+        val toast = Toast.makeText(this, msg, Toast.LENGTH_LONG)
+        toast.show()
+    }
 }

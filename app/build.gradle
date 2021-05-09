@@ -49,4 +49,8 @@ dependencies {
     implementation "com.github.moxy-community:moxy:$moxyVersion"
     kapt "com.github.moxy-community:moxy-compiler:$moxyVersion"
     implementation "com.github.moxy-community:moxy-androidx:$moxyVersion"
+
+    // Coroutines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_version"
 }
