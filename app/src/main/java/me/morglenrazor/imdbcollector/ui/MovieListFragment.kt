@@ -11,12 +11,7 @@ import me.morglenrazor.imdbcollector.ui.base.BaseFragment
 
 class MovieListFragment : BaseFragment() {
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_movie_list, container, false)
-    }
+    override val layoutResId = R.layout.fragment_movie_list
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -25,11 +20,8 @@ class MovieListFragment : BaseFragment() {
     }
 
     private fun setOnClickListeners() {
-        movieListButtonShowTxt.setOnClickListener { openCurrentMovieScreen() }
-    }
-
-    fun openCurrentMovieScreen(){
-        activity?.supportFragmentManager?.beginTransaction()
-            ?.add(R.id.mainContainer, MovieListFragment())?.commit()
+        movieListButtonShowTxt.setOnClickListener {
+            openNextFragment(CurrentMovieFragment())
+        }
     }
 }
