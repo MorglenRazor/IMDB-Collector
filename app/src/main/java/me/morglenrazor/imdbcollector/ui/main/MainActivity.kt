@@ -20,7 +20,7 @@ class MainActivity : BaseActivity(), MainView {
 
     override fun setRootScreen() {
         supportFragmentManager.beginTransaction()
-            .replace(R.id.mainContainer, ShowFragment())
+            .replace(R.id.mainContainer, MovieListFragment())
             .commit()
     }
 
