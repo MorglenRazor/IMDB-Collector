@@ -1,8 +1,9 @@
 package me.morglenrazor.imdbcollector.presentaiton.main
 
 import me.morglenrazor.imdbcollector.presentaiton.base.BasePresenter
+import moxy.MvpPresenter
 
-class MainPresenter : BasePresenter<MainView>() {
+class MainPresenter : MvpPresenter<MainView>() {
 
     override fun onFirstViewAttach() {
         super.onFirstViewAttach()

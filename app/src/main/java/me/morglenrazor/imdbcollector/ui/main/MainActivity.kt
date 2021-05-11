@@ -4,11 +4,12 @@ import android.os.Bundle
 import me.morglenrazor.imdbcollector.R
 import me.morglenrazor.imdbcollector.presentaiton.main.MainPresenter
 import me.morglenrazor.imdbcollector.presentaiton.main.MainView
-import me.morglenrazor.imdbcollector.ui.base.BaseActivity
+import me.morglenrazor.imdbcollector.ui.MovieListFragment
+import moxy.MvpAppCompatActivity
 import moxy.presenter.InjectPresenter
 
 
-class MainActivity : BaseActivity(), MainView {
+class MainActivity : MvpAppCompatActivity(), MainView {
     @InjectPresenter
     lateinit var presenter: MainPresenter
 
