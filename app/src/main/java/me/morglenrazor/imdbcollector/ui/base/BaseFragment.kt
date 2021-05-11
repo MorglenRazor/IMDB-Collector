@@ -22,7 +22,7 @@ abstract class BaseFragment : MvpAppCompatFragment(), BaseView{
         return inflater.inflate(layoutResId, container, false)
     }
 
-    fun openNextFragment(fragment: Fragment){
+    fun addFragment(fragment: Fragment){
         activity?.supportFragmentManager?.beginTransaction()
             ?.add(R.id.mainContainer, fragment)?.commit()
     }

@@ -21,7 +21,7 @@ class MovieListFragment : BaseFragment() {
 
     private fun setOnClickListeners() {
         movieListButtonShowTxt.setOnClickListener {
-            openNextFragment(CurrentMovieFragment())
+            addFragment(CurrentMovieFragment())
         }
     }
 }
