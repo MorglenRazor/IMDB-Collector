@@ -9,6 +9,6 @@ import moxy.MvpPresenter
 import java.lang.Error
 
 @InjectViewState
-open class BasePresenter< V: BaseView> : MvpPresenter<V>(),
-    CoroutineScope by CoroutineScope(Dispatchers.Main){
-    }
+open class BasePresenter<V : BaseView> : MvpPresenter<V>(),
+    CoroutineScope by CoroutineScope(Dispatchers.Main) {
+}
