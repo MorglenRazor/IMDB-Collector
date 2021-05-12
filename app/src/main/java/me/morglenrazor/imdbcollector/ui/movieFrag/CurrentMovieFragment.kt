@@ -1,4 +1,4 @@
-package me.morglenrazor.imdbcollector.ui
+package me.morglenrazor.imdbcollector.ui.movieFrag
 
 import me.morglenrazor.imdbcollector.R
 import me.morglenrazor.imdbcollector.ui.base.BaseFragment

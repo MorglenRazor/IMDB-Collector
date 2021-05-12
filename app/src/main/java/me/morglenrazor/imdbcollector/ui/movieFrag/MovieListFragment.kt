@@ -1,13 +1,11 @@
-package me.morglenrazor.imdbcollector.ui
+package me.morglenrazor.imdbcollector.ui.movieFrag
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import kotlinx.android.synthetic.main.fragment_movie_list.*
 import me.morglenrazor.imdbcollector.R
 import me.morglenrazor.imdbcollector.ui.base.BaseFragment
+import me.morglenrazor.imdbcollector.ui.movieFrag.CurrentMovieFragment
 
 class MovieListFragment : BaseFragment() {
 

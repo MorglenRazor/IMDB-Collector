@@ -4,7 +4,7 @@ import android.os.Bundle
 import me.morglenrazor.imdbcollector.R
 import me.morglenrazor.imdbcollector.presentaiton.main.MainPresenter
 import me.morglenrazor.imdbcollector.presentaiton.main.MainView
-import me.morglenrazor.imdbcollector.ui.MovieListFragment
+import me.morglenrazor.imdbcollector.ui.movieFrag.MovieListFragment
 import moxy.MvpAppCompatActivity
 import moxy.presenter.InjectPresenter
 
@@ -18,7 +18,7 @@ class MainActivity : MvpAppCompatActivity(), MainView {
         setContentView(R.layout.activity_main)
 
     }
-
+    //Method open on Activity main Fragment
     override fun setRootScreen() {
         supportFragmentManager.beginTransaction()
             .replace(R.id.mainContainer, MovieListFragment())
